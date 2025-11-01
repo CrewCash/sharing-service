@@ -29,12 +29,13 @@ val testcontainersVersion: String by project
 val testKeycloakVersion: String by project
 
 dependencies {
+	// Spring Boot
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
 	implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
-	implementation("org.springframework.cloud:spring-cloud-starter-config")
+
 	implementation("org.springframework.retry:spring-retry")
 	implementation("org.flywaydb:flyway-core")
 
