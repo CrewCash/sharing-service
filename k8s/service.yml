@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sharing-service
+  labels:
+    app: sharing-service
+spec:
+  type: ClusterIP
+  selector:
+    app: sharing-service
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9001
